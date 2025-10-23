@@ -1,0 +1,1 @@
+local Main = Window:CreateTab("Main") --Name of the tab--
