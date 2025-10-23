@@ -1,0 +1,25 @@
+Main:CreateButton("Click Me", function()  --name--
+    print("Clicked!")
+end)
+
+Main:CreateToggle("Enable Fly", false, function(state) --name, current value--
+    print("Fly:", state)
+end)
+
+Main:CreateSlider("Speed", 0, 200, 50, function(val)  --Name, current, max, min--
+    print("Speed:", val)
+end)
+
+Main:CreateDropdown("Select Mode", {"Classic", "Neon", "Bloom"}, function(option) --name, option--
+    print("Mode:", option)
+end)
+
+Main:CreateColorPicker("UI Color", Color3.fromRGB(255, 255, 255), function(color) --name, color--
+    print("Picked:", color)
+end)
+
+Main:CreateInput("Enter Text...", function(txt)  --name--
+    print("Input:", txt)
+end)
+
+--dont care example print--
